@@ -48,3 +48,8 @@ subprojects {
     }
 }
 
+project(':module-api') {
+    dependencies {
+        compileOnly project(':module-common')
+    }
+}
