@@ -1,4 +1,4 @@
-package com.jake.memeber.service;
+package com.jake.member.service;
 
 import com.jake.member.model.Member;
 import com.jake.member.repository.MemberRepository;
