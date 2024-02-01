@@ -48,8 +48,14 @@ subprojects {
     }
 }
 
+project(':module-common') {
+    bootJar.enabled = false
+    jar.enabled = true
+}
+
 project(':module-api') {
+
     dependencies {
-        compileOnly project(':module-common')
+        implementation(project(':module-common'))
     }
 }
